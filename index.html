@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <script src="./public/js/jquery.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <title>ISMart View</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header" class="shadow sticky-top z-10 bg-white p-14">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <div class="nav-logo ">
+                            <a href="" id="admin-logo" class="fs-4 fw-semibold text-decoration-none">AdminStator</a>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <div class="nav_right d-flex align-items-center justify-content-between">
+                            <div class="nav_add dropdown">
+                                <button class="btn-t" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="text-secondary fa-solid fa-circle-plus fa-2xl"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Thêm sản phẩm</a></li>
+                                    <li><a class="dropdown-item" href="#">Thêm bài viết</a></li>
+                                    <li><a class="dropdown-item" href="#">Thêm tiền</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav_admin">
+                                <div class="dropdown">
+                                    <button class="btn-t fs-5 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Trần Thanh Phú
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Tài khoản</a></li>
+                                        <li><a class="dropdown-item" href="#">Thoát</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wp_content" class="mh-600">
+            <div class="row">
+                <div class="col-2 bg-transparent">
+                    <div id="sidebar-left" class="pt-4">
+                        <ul id="sidebar-menu" class="ps-0 pt-2">
+                            <li><a href="" class="">
+                                    <i class="fa-solid fa-house"></i>
+                                    Dashboard
+                                </a>
+                                <span class="menu-dropdown">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </li>
+                            <li><a href="" class="">
+                                    <i class="fa-solid fa-file"></i>
+                                    Trang
+                                </a>
+                                <span class="menu-dropdown">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                                <ul id="sub-menu">
+                                    <li><a href="">Thêm mới</a></li>
+                                    <li><a href="">Danh sách</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Bài viết
+                                </a>
+                                <span class="menu-dropdown">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                                <ul id="sub-menu">
+                                    <li><a href="">Thêm mới</a></li>
+                                    <li><a href="">Danh sách</a></li>
+                                    <li><a href="">Danh mục</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="">
+                                    <i class="fa-solid fa-shop"></i>
+                                    Sản phẩm
+                                </a>
+                                <span class="menu-dropdown">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                                <ul id="sub-menu">
+                                    <li><a href="">Thêm mới</a></li>
+                                    <li><a href="">Danh sách</a></li>
+                                    <li><a href="">Danh mục</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                    Bán hàng
+                                </a>
+                                <span class="menu-dropdown">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                                <ul id="sub-menu">
+                                    <li><a href="">Danh sách đơn hàng</a></li>
+                                    <li><a href="">Danh sách khách hàng</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="">
+                                    <i class="fa-regular fa-user"></i>
+                                    Users
+                                </a>
+                                <span class="menu-dropdown">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                                <ul id="sub-menu">
+                                    <li><a href="">Thêm mới</a></li>
+                                    <li><a href="">Danh sách</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="">
+                                    <i class="fa-solid fa-users"></i>
+                                    Phân quyền
+                                </a>
+                                <span class="menu-dropdown">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                                <ul id="sub-menu">
+                                    <li><a href="">Quyền</a></li>
+                                    <li><a href="">Thêm vai trò</a></li>
+                                    <li><a href="">Danh sách vai trò </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-10 bg-body-secondary">
+                    <div id="content" class="mh-full pt-4">
+                        <div class="business p-16">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="card bg-primary text-white">
+                                        <div class="card-header">
+                                            ĐƠN HÀNG THÀNH CÔNG
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">266</h5>
+                                            <p class="card-text">Đơn hàng giao dịch thành công</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card bg-danger text-white">
+                                        <div class="card-header">
+                                            ĐANG XỬ LÝ
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">26</h5>
+                                            <p class="card-text">Số lượng đơn hàng đang xử lý</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card bg-success text-white">
+                                        <div class="card-header">
+                                            DOANH SỐ
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">17 tỷ</h5>
+                                            <p class="card-text">Doanh số hệ thống</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card bg-secondary text-white">
+                                        <div class="card-header">
+                                            ĐƠN HÀNG HỦY
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">15</h5>
+                                            <p class="card-text">Số đơn bị hủy trong hệ thống</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-16">
+                            <div class="card bg-white">
+                                <div class="card-header fs-5 fw-semibold">
+                                    ĐƠN HÀNG MỚI
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-light table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Mã</th>
+                                                <th scope="col">Khách hàng</th>
+                                                <th scope="col">Sản phẩm</th>
+                                                <th scope="col">Số lượng</th>
+                                                <th scope="col">Giá trị</th>
+                                                <th scope="col">Trạng thái</th>
+                                                <th scope="col">Thời gian</th>
+                                                <th scope="col">Tác vụ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="vertical-center">
+                                                <th scope="row">1</th>
+                                                <td>#862</td>
+                                                <td>
+                                                    <a href="" class="text-decoration-none">Nguyễn Thị Phương Thảo</a><br>
+                                                    <span class="fs-14">0972587625</span>
+                                                </td>
+                                                <td>
+                                                    <a href="" class="text-decoration-none">Samsung Galaxy A51 (8GB/128GB)</a>
+                                                </td>
+                                                <td class="text-center">
+                                                    <span>1</span>
+                                                </td>
+                                                <td>
+                                                    <span>17.000.000đ</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge bg-warning">Đang xử lí</span>
+                                                </td>
+                                                <td>
+                                                    26:06:2020 14:00
+                                                </td>
+                                                <td>
+                                                    <a href="" class="btn btn-success rounded-0 border-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="text-white fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="" class="btn btn-danger rounded-0 border-0"type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="text-white fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="vertical-center">
+                                                <th scope="row">2</th>
+                                                <td>#268</td>
+                                                <td>
+                                                    <a href="" class="text-decoration-none">Nguyễn Hồng Ánh</a><br>
+                                                    <span class="fs-14">0972587625</span>
+                                                </td>
+                                                <td>
+                                                    <a href="" class="text-decoration-none">Iphone 11</a>
+                                                </td>
+                                                <td class="text-center">
+                                                    <span>2</span>
+                                                </td>
+                                                <td>
+                                                    <span>21.000.000đ</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge bg-success">Hoàn thành</span>
+                                                </td>
+                                                <td>
+                                                    26:06:2020 14:00
+                                                </td>
+                                                <td>
+                                                    <a href="" class="btn btn-success rounded-0 border-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="text-white fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="" class="btn btn-danger rounded-0 border-0"type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="text-white fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="vertical-center">
+                                                <th scope="row">3</th>
+                                                <td>#827</td>
+                                                <td>
+                                                    <a href="" class="text-decoration-none">Nguyễn Thị Phúc Hảo</a><br>
+                                                    <span class="fs-14">0972587625</span>
+                                                </td>
+                                                <td>
+                                                    <a href="" class="text-decoration-none">XiaoMi 11</a>
+                                                </td>
+                                                <td class="text-center">
+                                                    <span>2</span>
+                                                </td>
+                                                <td>
+                                                    <span>18.000.000đ</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge bg-danger">Đang xử lý</span>
+                                                </td>
+                                                <td>
+                                                    26:06:2020 14:00
+                                                </td>
+                                                <td>
+                                                    <a href="" class="btn btn-success rounded-0 border-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="text-white fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="" class="btn btn-danger rounded-0 border-0"type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="text-white fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                          <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                              <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                          </li>
+                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                              <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+    <script src="./public/js/main.js"></script>
+</body>
+
+</html>
